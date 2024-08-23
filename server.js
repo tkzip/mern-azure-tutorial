@@ -44,7 +44,7 @@ app.post("/create", (req, res) => {
 });
 
 // for production, React app will be transpiled into build folder
-app.use(express.static(".client/build"));
+app.use(express.static("./client/build"));
 
 // handle all get requests
 app.get("*", (req, res) => {
