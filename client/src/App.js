@@ -26,7 +26,7 @@ function App() {
           return (
             <div>
               <h3>
-                {user.name} {user.lastName}
+                {user.name} - {user.email}
               </h3>
             </div>
           );

@@ -8,7 +8,8 @@ export default function Create() {
   const navigate = useNavigate();
   const [user, setUser] = useState({
     name: "",
-    lastName: "",
+    //lastName: "",
+    email: "",
   });
 
   const handleChange = (e) => {
@@ -41,13 +42,17 @@ export default function Create() {
         value={user.name}
       />
       <input
-        placeholder="last name"
+        // placeholder="last name"
+        // onChange={handleChange}
+        // name="lastName"
+        // value={user.lastName}
+        placeholder="email"
         onChange={handleChange}
-        name="lastName"
-        value={user.lastName}
+        name="email"
+        value={user.email}
       />
 
-      <button onClick={saveData}>Save to MongoDB</button>
+      <button onClick={saveData}>Save to Prisma</button>
       <button onClick={() => navigate(-1)}>Back</button>
     </div>
   );
